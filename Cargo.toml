@@ -1,7 +1,9 @@
 [package]
-name = "bevy_lib_template"
+name = "bevy_registry_exporter"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-bevy = { version = "*", default-features = false, features = ["dynamic_linking"] }
+bevy = { version = "*", default-features = false, features = ["dynamic_linking", "bevy_asset", "bevy_scene", "bevy_gltf", "animation"] }
+serde = { version = "*" }
+serde_json = { version = "*" }
